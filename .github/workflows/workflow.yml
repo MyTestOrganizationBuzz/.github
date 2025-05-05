@@ -1,0 +1,10 @@
+name: OIDC-Azure
+on:
+  workflow_dispatch:
+jobs:
+  login_to_az:
+    runs-on: ubuntu-latest
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout-repo
+        uses: actions/checkout@v4
